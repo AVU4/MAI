@@ -1,0 +1,9 @@
+stages:
+  random_forest_model:
+    cmd: python random_forest.py
+    deps:
+    - data/iris.csv
+    - random_forest.py
+    outs:
+    - data/predict_values.csv
+    - data/test_values.csv

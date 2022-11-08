@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  random_forest_model:
+    cmd: python random_forest.py
+    deps:
+    - path: data/iris.csv
+      md5: 42615765a885ddf54427f12c34a0a070
+      size: 4551
+    - path: random_forest.py
+      md5: 3e1f56b6a595820e26bf2c4349f8ba20
+      size: 601
+    outs:
+    - path: data/predict_values.csv
+      md5: ea554eeeb440cfa7d0bde596fa8fd90c
+      size: 549
+    - path: data/test_values.csv
+      md5: e068e3081878a8c3a77ea3f7038a7a8c
+      size: 567
